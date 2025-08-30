@@ -1,4 +1,3 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Story, UserProgress } from '../types';
 
@@ -35,13 +34,25 @@ const storySlice = createSlice({
     },
     updateUserProgress(state, action: PayloadAction<{ storyId: string; progress: UserProgress }>) {
       state.userProgress[action.payload.storyId] = action.payload.progress;
-      AsyncStorage.setItem('userProgress', JSON.stringify(state.userProgress));
     },
     loadProgress(state, action: PayloadAction<{ [storyId: string]: UserProgress }>) {
       state.userProgress = action.payload;
     },
+    clearCurrentStory(state) {
+      state.currentStoryId = null;
+    },
+    resetUserProgress(state, action: PayloadAction<string>) {
+      delete state.userProgress[action.payload];
+    },
   },
 });
 
-export const { setStories, setCurrentStory, updateUserProgress, loadProgress } = storySlice.actions;
+export const { 
+  setStories, 
+  setCurrentStory, 
+  updateUserProgress, 
+  loadProgress, 
+  clearCurrentStory,
+  resetUserProgress 
+} = storySlice.actions;
 export default storySlice.reducer;

@@ -76,3 +76,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     </ThemeContext.Provider>
   );
 };
+
+// Default export to satisfy expo-router requirements
+const themeContext = {
+  ThemeProvider,
+  useTheme,
+};
+
+export default themeContext;

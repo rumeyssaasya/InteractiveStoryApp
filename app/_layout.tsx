@@ -4,8 +4,11 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import { View } from 'react-native';
-import { ThemeProvider, useTheme } from '../app/contexts/ThemeContext';
+import { Provider } from 'react-redux';
 import '../global.css';
+import { ThemeProvider, useTheme } from './contexts/ThemeContext';
+import { store } from './store';
+import { initializeStore } from './store/init';
 
 // Splash screen'ı göster
 SplashScreen.preventAutoHideAsync();
@@ -18,6 +21,9 @@ function ThemedLayout() {
   useEffect(() => {
     const prepare = async () => {
       try {
+        // Initialize Redux store
+        await initializeStore();
+        
         await new Promise(resolve => setTimeout(resolve, 500));
         
         // Son açılan sayfanın yolunu AsyncStorage'den al
@@ -57,8 +63,10 @@ function ThemedLayout() {
 
 export default function RootLayout() {
   return (
-    <ThemeProvider>
-      <ThemedLayout />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider>
+        <ThemedLayout />
+      </ThemeProvider>
+    </Provider>
   );
 }
