@@ -7,8 +7,7 @@ import { clearUserProgress } from '../storage';
 export default function EndPage() {
   const router = useRouter();
   const { storyId } = useLocalSearchParams();
-  
-  // ID string olarak al
+
   const id = Array.isArray(storyId) ? storyId[0] : storyId;
   const story = sampleStories.find(s => s.id === id);
 
@@ -80,4 +79,5 @@ export default function EndPage() {
       </View>
     </View>
   );
+
 }
