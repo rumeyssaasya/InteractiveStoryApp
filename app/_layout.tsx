@@ -13,7 +13,6 @@ import { initializeStore } from './store/init';
 // Splash screen'ı göster
 SplashScreen.preventAutoHideAsync();
 
-// Tema bilgisini kullanacak iç layout bileşeni
 function ThemedLayout() {
   const { isDark } = useTheme();
   const router = useRouter();
@@ -21,21 +20,15 @@ function ThemedLayout() {
   useEffect(() => {
     const prepare = async () => {
       try {
-        // Initialize Redux store
         await initializeStore();
-        
         await new Promise(resolve => setTimeout(resolve, 500));
-        
-        // Son açılan sayfanın yolunu AsyncStorage'den al
         const lastRoute = await AsyncStorage.getItem('lastRoute');
         
         if (lastRoute) {
-          // Geçerli rotaları kontrol et
           const validRoutes = ['/(tabs)', '/story/', '/story/endPage'];
           const isValidRoute = validRoutes.some(route => lastRoute.startsWith(route));
           
           if (isValidRoute) {
-            // Son rotaya yönlendir
             router.replace(lastRoute as any);
           }
         }
