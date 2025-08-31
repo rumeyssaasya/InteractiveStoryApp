@@ -115,7 +115,6 @@ useEffect(() => {
         useNativeDriver: true,
       })
     ]).start(() => {
-      // Animasyon tamamlandığında state'i sıfırla
       fadeAnim.setValue(1);
       slideAnim.setValue(0);
       contentScale.setValue(1);
@@ -126,7 +125,7 @@ useEffect(() => {
   const handleChoiceSelect = async (choiceId: string, nextChapterId: string) => {
     if (!story || !progress || isTransitioning) return;
 
-    // Seçenek yüzdelerini göster
+    // Seçenek yüzdelerini gösterir
     const stats: { [key: string]: number } = {};
     story.chapters[progress.currentChapterId]?.choices.forEach(choice => {
       stats[choice.id] = generateRandomPercentage();
@@ -135,7 +134,6 @@ useEffect(() => {
     setShowStats(true);
 
     setTimeout(async () => {
-      // Geçiş animasyonunu başlat
       animateTransition();
 
       setTimeout(async () => {
@@ -156,7 +154,7 @@ useEffect(() => {
 
         setShowStats(false);
         setChoiceStats({});
-      }, 400); // Animasyon süresiyle eşleşmeli
+      }, 400); 
     }, 2000);
   };
 
@@ -230,7 +228,6 @@ useEffect(() => {
         <View className="p-4">
           <Text className="text-2xl font-bold mb-4 text-center">{currentChapter.title}</Text>
           
-          {/* İçerik için de ayrı animasyon */}
           <Animated.Text 
             className="text-lg leading-7 mb-6 text-gray-800"
             style={{
@@ -322,4 +319,5 @@ useEffect(() => {
 
     </View>
   );
+
 }
