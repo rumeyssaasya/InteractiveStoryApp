@@ -49,7 +49,6 @@ export type TabParamList = {
   stories: undefined;
 };
 
-// Use this type when using navigation prop
 declare global {
   namespace ReactNavigation {
     interface RootParamList extends RootStackParamList {}
@@ -57,4 +56,5 @@ declare global {
 }
 
 const TemporaryComponent = () => null;
+
 export default TemporaryComponent;
