@@ -51,7 +51,7 @@ npm start
 ```
 Açılan terminalde QR kodu tarayarak gerçek cihazda veya simülatörde çalıştırabilirsiniz.
 
-Kullanım
+## Kullanım
 Ana sayfada hikayeler listelenecektir.
 
 Bir hikaye seçin → StoryReader sayfası açılır.
@@ -60,7 +60,7 @@ Her chapter’da seçim yapabilirsiniz → seçimler Redux store ve AsyncStorage
 
 Uygulamayı kapatıp tekrar açtığınızda ilerlemeniz ve son açtığınız sayfa korunur.
 
-Test
+## Test
 ---
 - Redux store kontrolü:
 var
@@ -88,7 +88,7 @@ Tablar arasında geçiş yapılırken hata alınıyor mu?
  - <img src="https://github.com/user-attachments/assets/a1e20ff0-3deb-420c-bfd3-ed660655a654" alt="Açıklama" width="200" height="400">
  - <img src="https://github.com/user-attachments/assets/a463269e-b193-4dcd-9fb1-c84cc53a381a" alt="Açıklama" width="200" height="400">
 
-Proje Yapısı
+## Proje Yapısı
 app/
 
 store/ → Redux store ve slice’lar
@@ -107,7 +107,7 @@ types/ → TypeScript tipleri
 
 assets/ → resim, ikon ve görseller
 
-Özellikler
+## Özellikler
 Story seçimleri ve chapter geçişleri
 
 Redux Toolkit ile state yönetimi
