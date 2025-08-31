@@ -30,8 +30,8 @@ cd decisionBox
 npm install
 ```
 4. Nativewind, Tailwindcss Yükleme
--https://www.nativewind.dev/docs/getting-started/installation
--Videodan yardım alabilirsiniz.
+- https://www.nativewind.dev/docs/getting-started/installation
+- Videodan yardım alabilirsiniz.
 https://www.youtube.com/watch?v=FyCaPXpvyNM
 
 5.Paket bağımlılıkları (örnek):
