@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { Image, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { sampleStories } from '../data/stories';
-// Her sayfa bileşeninizin useEffect hook'una ekleyin
 import { usePathname } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -157,7 +156,7 @@ export default function ExploreScreen() {
             )}
           </View>
 
-          {/* Yeni Eklenenler (sadece arama yoksa göster) */}
+          {/* Yeni Eklenenler */}
           {!searchQuery && filteredStories.length > 0 && (
             <View>
               <Text className="text-xl font-semibold mb-4">Yeni Eklenenler</Text>
