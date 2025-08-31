@@ -20,11 +20,9 @@ const initialState: StoriesState = {
   selectedGenre: '',
 };
 
-// Async thunk to load stories
 export const loadStories = createAsyncThunk(
   'stories/loadStories',
   async () => {
-    // Simulate API call delay
     await new Promise(resolve => setTimeout(resolve, 100));
     return sampleStories;
   }
@@ -73,7 +71,6 @@ const storiesSlice = createSlice({
   },
 });
 
-// Helper function to filter stories
 const filterStories = (stories: Story[], searchQuery: string, selectedGenre: string): Story[] => {
   return stories.filter(story => {
     const matchesSearch = !searchQuery || 
@@ -96,3 +93,4 @@ export const {
 } = storiesSlice.actions;
 
 export default storiesSlice.reducer;
+
