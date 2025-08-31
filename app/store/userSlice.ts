@@ -19,7 +19,6 @@ const initialState: UserState = {
   error: null,
 };
 
-// Async thunk to load user stats
 export const loadUserStats = createAsyncThunk(
   'user/loadStats',
   async () => {
@@ -28,7 +27,6 @@ export const loadUserStats = createAsyncThunk(
   }
 );
 
-// Async thunk to update user stats
 export const updateUserStats = createAsyncThunk(
   'user/updateStats',
   async (stats: UserStats) => {
@@ -95,3 +93,4 @@ export const {
 } = userSlice.actions;
 
 export default userSlice.reducer;
+
