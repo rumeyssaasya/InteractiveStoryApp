@@ -1,6 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
-// Her sayfa bileşeninizin useEffect hook'una ekleyin
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { usePathname } from 'expo-router';
 import { useEffect } from 'react';
