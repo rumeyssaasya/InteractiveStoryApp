@@ -1,7 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { UserProgress, UserStats } from '../types';
 
-// Progress için key
 const PROGRESS_KEY = 'userProgress';
 const STATS_KEY = 'userStats';
 
@@ -85,7 +84,7 @@ const updateUserStats = async (): Promise<void> => {
 };
 
 
-// Tüm verileri temizle (debug için)
+// Tüm verileri temizle
 export const clearAllData = async (): Promise<void> => {
   try {
     const keys = await AsyncStorage.getAllKeys();
@@ -96,5 +95,6 @@ export const clearAllData = async (): Promise<void> => {
   }
 };
 
-// Varsayılan export (route hatası için)
+// Varsayılan export
+
 export default { getUserProgress, getAllProgress, saveUserProgress, clearUserProgress, getUserStats, clearAllData };
