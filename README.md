@@ -72,21 +72,21 @@ Her chapter’da seçim yaptıktan sonra bir sonraki chapter doğru mu yükleniy
 
 
 Seçimler AsyncStorage’a kaydediliyor mu?
- ![WhatsApp Görsel 2025-08-31 saat 03 08 00_f2ae8c3e](https://github.com/user-attachments/assets/62b9211f-a33f-4e07-9644-2c78bdb51d40)
+ <img src="https://github.com/user-attachments/assets/62b9211f-a33f-4e07-9644-2c78bdb51d40" alt="Açıklama" width="200" height="400">
 
 Uygulama yeniden başlatınca son açılan sayfa (lastRoute) doğru yükleniyor mu?
  Evet
 
 Kullanıcı ilerlemesi korunuyor mu?
 Evet
-![WhatsApp Görsel 2025-08-31 saat 03 08 00_f2ae8c3e](https://github.com/user-attachments/assets/5ea3cab9-36b4-40c4-b880-40323a2887c6)
+ <img src="https://github.com/user-attachments/assets/5ea3cab9-36b4-40c4-b880-40323a2887c6" alt="Açıklama" width="200" height="400">
 
 
 Tablar arasında geçiş yapılırken hata alınıyor mu?
  Hayır
-![WhatsApp Görsel 2025-08-31 saat 03 07 59_7c1a6462](https://github.com/user-attachments/assets/ece88acf-734d-4193-ba5b-4108327f97a1)
-![WhatsApp Görsel 2025-08-31 saat 03 08 00_f2ae8c3e](https://github.com/user-attachments/assets/a1e20ff0-3deb-420c-bfd3-ed660655a654)
-![WhatsApp Görsel 2025-08-31 saat 03 08 00_fa319063](https://github.com/user-attachments/assets/a463269e-b193-4dcd-9fb1-c84cc53a381a)
+ <img src="https://github.com/user-attachments/assets/ece88acf-734d-4193-ba5b-4108327f97a1" alt="Açıklama" width="200" height="400">
+ <img src="https://github.com/user-attachments/assets/a1e20ff0-3deb-420c-bfd3-ed660655a654" alt="Açıklama" width="200" height="400">
+ <img src="https://github.com/user-attachments/assets/a463269e-b193-4dcd-9fb1-c84cc53a381a" alt="Açıklama" width="200" height="400">
 
 Proje Yapısı
 app/
