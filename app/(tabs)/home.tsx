@@ -5,7 +5,6 @@ import { Image, Pressable, RefreshControl, ScrollView, Text, View } from 'react-
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { sampleStories } from '../data/stories';
 import { getAllProgress } from '../storage';
-// Her sayfa bileşeninizin useEffect hook'una ekleyin
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { usePathname } from 'expo-router';
 
@@ -161,7 +160,6 @@ export default function HomeScreen() {
         }
       >
         <View className="p-4">
-          {/* Başlık - SafeAreaView altında */}
           <Text className="text-3xl font-bold text-gray-900">Karar Kutusu</Text>
           <Text className="text-gray-600 mt-2">Interaktif maceralara hazır mısın?</Text>
 
@@ -205,7 +203,7 @@ export default function HomeScreen() {
             </ScrollView>
           </View>
 
-          {/* Son Oynanan Hikayeler */}
+          {/* Son Okunan Hikayeler */}
           {recentStories.length > 0 && (
             <View className="mb-6">
               <View className="flex-row justify-between items-center mb-4">
@@ -237,7 +235,7 @@ export default function HomeScreen() {
                           pathname: "/story/[id]",
                           params: { 
                             id: recent.storyId,
-                            chapterId: recent.currentChapterId // Kaldığı yerden devam et
+                            chapterId: recent.currentChapterId
                           }
                         }} 
                         asChild
@@ -256,7 +254,6 @@ export default function HomeScreen() {
             </View>
           )}
 
-          {/* Yükleme durumu */}
           {refreshing && (
             <View className="items-center py-4">
               <Text className="text-gray-500">Yükleniyor...</Text>
