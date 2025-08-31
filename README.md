@@ -1,50 +1,118 @@
-# Welcome to your Expo app 👋
+# KararKutusu
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+KararKutusu, interaktif hikayeler sunan bir mobil uygulamadır. Kullanıcılar hikayeleri okuyabilir, seçimler yapabilir ve ilerlemeleri kaydedebilir. Redux Toolkit ile state yönetimi yapılır ve AsyncStorage ile ilerleme persist edilir.
 
-## Get started
+## Teknolojiler
 
-1. Install dependencies
+- React Native (Expo)  
+- TypeScript  
+- Redux Toolkit  
+- AsyncStorage  
+- Expo Router  
+- TailwindCSS (NativeWind ile)  
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## Kurulum
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Depoyu klonlayın:
 ```bash
-npm run reset-project
+git clone <repo-link>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Proje dizinine gidin:
+```bash
+cd decisionBox
+```
 
-## Learn more
+3. Gerekli paketleri yükleme:
+```bash
+npm install
+```
+4. Nativewind, Tailwindcss Yükleme
+-https://www.nativewind.dev/docs/getting-started/installation
+-Videodan yardım alabilirsiniz.
+https://www.youtube.com/watch?v=FyCaPXpvyNM
 
-To learn more about developing your project with Expo, look at the following resources:
+5.Paket bağımlılıkları (örnek):
+```bash
+npm install react react-native expo #Temel bağımlılıklar (React, React Native, Expo)
+npm install @reduxjs/toolkit react-redux #Redux Toolkit ve React-Redux
+npm install @react-native-async-storage/async-storage #AsyncStorage
+npm install expo-router expo-status-bar expo-splash-screen #Expo Router ve diğer Expo modülleri
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+6. Çalıştırma
+Expo CLI ile projeyi başlatın:
+```bash
+npx expo start
+# veya
+npm start
+```
+Açılan terminalde QR kodu tarayarak gerçek cihazda veya simülatörde çalıştırabilirsiniz.
 
-## Join the community
+Kullanım
+Ana sayfada hikayeler listelenecektir.
 
-Join our community of developers creating universal apps.
+Bir hikaye seçin → StoryReader sayfası açılır.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Her chapter’da seçim yapabilirsiniz → seçimler Redux store ve AsyncStorage’a kaydedilir.
+
+Uygulamayı kapatıp tekrar açtığınızda ilerlemeniz ve son açtığınız sayfa korunur.
+
+Test
+---
+- Redux store kontrolü:
+var
+
+- StoryReader seçimleri:
+
+Her chapter’da seçim yaptıktan sonra bir sonraki chapter doğru mu yükleniyor?
+![WhatsApp Görsel 2025-08-31 saat 03 08 00_015f14aa](https://github.com/user-attachments/assets/8649e7ef-6fa9-451c-9f2a-726303636ae6)
+
+Seçimler AsyncStorage’a kaydediliyor mu?
+ ![WhatsApp Görsel 2025-08-31 saat 03 08 00_f2ae8c3e](https://github.com/user-attachments/assets/62b9211f-a33f-4e07-9644-2c78bdb51d40)
+
+Uygulama yeniden başlatınca son açılan sayfa (lastRoute) doğru yükleniyor mu?
+ Evet
+
+Kullanıcı ilerlemesi korunuyor mu?
+Evet
+![WhatsApp Görsel 2025-08-31 saat 03 08 00_f2ae8c3e](https://github.com/user-attachments/assets/5ea3cab9-36b4-40c4-b880-40323a2887c6)
+
+
+Tablar arasında geçiş yapılırken hata alınıyor mu?
+ Hayır
+![WhatsApp Görsel 2025-08-31 saat 03 07 59_7c1a6462](https://github.com/user-attachments/assets/ece88acf-734d-4193-ba5b-4108327f97a1)
+![WhatsApp Görsel 2025-08-31 saat 03 08 00_f2ae8c3e](https://github.com/user-attachments/assets/a1e20ff0-3deb-420c-bfd3-ed660655a654)
+![WhatsApp Görsel 2025-08-31 saat 03 08 00_fa319063](https://github.com/user-attachments/assets/a463269e-b193-4dcd-9fb1-c84cc53a381a)
+
+Proje Yapısı
+app/
+
+store/ → Redux store ve slice’lar
+
+data/ → stories.ts
+
+story/ → story sayfaları ([id].tsx, endPage.tsx)
+
+tabs/ → tab layout ve sayfalar
+
+_layout.tsx → root layout ve provider
+
+components/ui/ → UI bileşenleri
+
+types/ → TypeScript tipleri
+
+assets/ → resim, ikon ve görseller
+
+Özellikler
+Story seçimleri ve chapter geçişleri
+
+Redux Toolkit ile state yönetimi
+
+AsyncStorage ile ilerleme persist
+
+Sade ve sezgisel kullanıcı arayüzü
+
+Tablar arasında hızlı geçiş ve son rota hatırlama
