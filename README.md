@@ -15,26 +15,26 @@ KararKutusu, interaktif hikayeler sunan bir mobil uygulamadır. Kullanıcılar h
 
 ## Kurulum
 
-1. Depoyu klonlayın:
+# 1. Depoyu klonlayın:
 ```bash
 git clone <repo-link>
 ```
 
-2. Proje dizinine gidin:
+# 2. Proje dizinine gidin:
 ```bash
 cd decisionBox
 ```
 
-3. Gerekli paketleri yükleme:
+# 3. Gerekli paketleri yükleme:
 ```bash
 npm install
 ```
-4. Nativewind, Tailwindcss Yükleme
+# 4. Nativewind, Tailwindcss Yükleme
 - https://www.nativewind.dev/docs/getting-started/installation
 - Videodan yardım alabilirsiniz.
 https://www.youtube.com/watch?v=FyCaPXpvyNM
 
-5.Paket bağımlılıkları (örnek):
+# 5.Paket bağımlılıkları (örnek):
 ```bash
 npm install react react-native expo #Temel bağımlılıklar (React, React Native, Expo)
 npm install @reduxjs/toolkit react-redux #Redux Toolkit ve React-Redux
@@ -42,7 +42,7 @@ npm install @react-native-async-storage/async-storage #AsyncStorage
 npm install expo-router expo-status-bar expo-splash-screen #Expo Router ve diğer Expo modülleri
 ```
 
-6. Çalıştırma
+# 6. Çalıştırma
 Expo CLI ile projeyi başlatın:
 ```bash
 npx expo start
