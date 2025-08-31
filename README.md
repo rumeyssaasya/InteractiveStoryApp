@@ -17,7 +17,7 @@ KararKutusu, interaktif hikayeler sunan bir mobil uygulamadır. Kullanıcılar h
 
 # 1. Depoyu klonlayın:
 ```bash
-git clone <repo-link>
+git clone [<repo-link>](https://github.com/rumeyssaasya/decisionBox.git)
 ```
 
 # 2. Proje dizinine gidin:
