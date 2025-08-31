@@ -721,136 +721,139 @@ export const sampleStories: Story[] = [
         '1': {
             id: '1',
             title: 'Orman Yolu',
-            content: `Yoğun ormanda ilerliyorsunuz. İlerledikçe iki yol ayrımı görüyorsunuz: biri karanlık ve dar, diğeri aydınlık ve geniş.`,
+            content: `Yoğun ormanda ilerliyorsunuz. Ağaçlar sanki kendi aralarında fısıldaşıyor. Yoldaki taşlar kaygan ve hava nemli. İlerledikçe iki yol ayrımı görüyorsunuz: biri daha karanlık ve dar, diğeri nispeten aydınlık ve geniş.`,
             choices: [
-            { id: '1', text: 'Doğuya git (karanlık patika)', nextChapterId: '2' },
-            { id: '2', text: 'Batıya git (aydınlık patika)', nextChapterId: '3' }
+                { id: '1', text: 'Doğuya git (karanlık patika)', nextChapterId: '2' },
+                { id: '2', text: 'Batıya git (aydınlık patika)', nextChapterId: '3' }
             ]
-        },
+            },
         '2': {
             id: '2',
             title: 'Eski Tapınak',
-            content: `Dar patika sizi yıkık dökük bir tapınağa götürüyor. Tapınağın kapısı hafif aralık, içeriden tuhaf bir ışık sızıyor.`,
+            content: `Dar patika sizi yıkık dökük bir tapınağa götürüyor. Surlar arasında garip işaretler ve semboller var. Tapınağın kapısı hafif aralık, içeriden tuhaf bir ışık sızıyor.`,
             choices: [
-            { id: '1', text: 'İşaretleri incele', nextChapterId: '4' },
-            { id: '2', text: 'Tapınağın içine gir', nextChapterId: '7' }
+                { id: '1', text: 'İşaretleri incele', nextChapterId: '4' },
+                { id: '2', text: 'Tapınağın içine gir', nextChapterId: '7' },
+                { id: '3', text: 'Geri dön', nextChapterId: '1' }
             ]
         },
         '3': {
             id: '3',
             title: 'Nehir Kenarı',
-            content: `Aydınlık patika sizi bir nehir kenarına çıkarıyor. Karşıda eski bir köprü ve bağlı bir bot var.`,
+            content: `Aydınlık patika sizi bir nehir kenarına çıkarıyor. Sular hızlı akıyor ve karşıda eski bir köprü görüyorsunuz. Yakınlarda bir küçük bot da bağlı duruyor.`,
             choices: [
-            { id: '1', text: 'Köprüden geç', nextChapterId: '6' },
-            { id: '2', text: 'Botu kullan', nextChapterId: '8' }
+                { id: '1', text: 'Yüzerek karşıya geç', nextChapterId: '5' },
+                { id: '2', text: 'Köprüden geç', nextChapterId: '6' },
+                { id: '3', text: 'Botu kullan', nextChapterId: '8' }
             ]
         },
         '4': {
             id: '4',
             title: 'Tapınağın Sırrı',
-            content: `Tapınağın içinde gizli bir oda buluyorsunuz. Haritada ormanın derinliklerinde bir yer işaretli.`,
+            content: `Tapınağın içinde gizli bir oda buluyorsunuz. İçeride eski bir harita ve bazı notlar var. Harita ormanın derinliklerinde gizli bir yerin yolunu gösteriyor.`,
             choices: [
-            { id: '1', text: 'Haritayı al ve ormanın derinliklerine git', nextChapterId: '9' },
-            { id: '2', text: 'Odayı incelemeye devam et', nextChapterId: '10' }
+                { id: '1', text: 'Haritayı al ve ormanın derinliklerine git', nextChapterId: '9' },
+                { id: '2', text: 'Odayı incelemeye devam et', nextChapterId: '10' },
+                { id: '3', text: 'Tapınaktan çık ve nehir yoluna dön', nextChapterId: '3' }
             ]
         },
         '5': {
             id: '5',
-            title: 'Şehir Kalıntıları',
-            content: `Nehrin ötesindeki kalıntıları geziyorsunuz. Eski bir tapınağın taş levhası üzerinde bilinmeyen bir dil var.`,
+            title: 'Nehrin Ötesi',
+            content: `Suda zorlanarak yüzdünüz ama karşıya ulaştınız. Nehrin diğer tarafında eski bir şehir kalıntısı sizi bekliyor. Bazı binalar yıkılmış, bazıları hala ayakta. Hava biraz sisli, gizemli bir atmosfer var.`,
             choices: [
-            { id: '1', text: 'Levhayı incele', nextChapterId: '16' },
-            { id: '2', text: 'Kalıntıları keşfetmeye devam et', nextChapterId: '11' }
+                { id: '1', text: 'Kalıntıları keşfet', nextChapterId: '11' },
+                { id: '2', text: 'Ormana geri dön', nextChapterId: '1' }
             ]
         },
         '6': {
             id: '6',
             title: 'Köprünün Sonu',
-            content: `Köprü çürük ve çöküyor. Tam ortasına geldiğinizde tahtalar kırıldı ve suya düştünüz. Macera burada sona eriyor.`,
+            content: `Köprü çürük ve çöküyor. Tam ortasına geldiğinizde tahtalar kırıldı ve suya düştünüz. Sular sizi sürüklüyor. Macera burada sona eriyor.`,
             choices: [],
             isEnding: true
         },
         '7': {
             id: '7',
             title: 'Tapınağın Derinlikleri',
-            content: `Tapınağın içinde karanlık bir koridor sizi bekliyor. Duvarlarda eski yazıtlar ve semboller var.`,
+            content: `Tapınağın içine girdiniz. Tozlu ve karanlık bir koridor sizi bekliyor. Duvarlarda eski yazıtlar ve gizemli semboller var. İçeriden hafif bir uğultu geliyor.`,
             choices: [
-            { id: '1', text: 'Koridoru takip et', nextChapterId: '12' },
-            { id: '2', text: 'Yazıtları incele', nextChapterId: '4' }
+                { id: '1', text: 'Yazıtları incele', nextChapterId: '4' },
+                { id: '2', text: 'Koridoru takip et', nextChapterId: '12' }
             ]
         },
         '8': {
             id: '8',
             title: 'Bot Yolculuğu',
-            content: `Botu kullanarak nehri geçiyorsunuz. Karşı kıyıda gizemli bir mağara girişi görüyorsunuz.`,
+            content: `Botu kullanarak nehri geçiyorsunuz. Su sizi sakin bir şekilde taşıyor. Karşı kıyıya vardığınızda, gizemli bir mağara girişi görüyorsunuz.`,
             choices: [
-            { id: '1', text: 'Mağaraya gir', nextChapterId: '13' },
-            { id: '2', text: 'Yeni bir yol bulmak için ormana sap', nextChapterId: '1' }
+                { id: '1', text: 'Mağaraya gir', nextChapterId: '13' },
+                { id: '2', text: 'Ormana sap ve yeni bir yol bul', nextChapterId: '1' }
             ]
         },
         '9': {
             id: '9',
             title: 'Ormanın Derinlikleri',
-            content: `Haritada işaretli yere ulaştınız. Büyük bir taş kapı var ve üzerinde garip semboller kazınmış.`,
+            content: `Haritada işaretli yere ulaştınız. Büyük bir taş kapı var ve üzerinde garip semboller kazınmış. Kapıyı açmak için bir seçim yapmanız gerekiyor.`,
             choices: [
-            { id: '1', text: 'Sembolleri çözerek kapıyı aç', nextChapterId: '14' },
-            { id: '2', text: 'Güç kullanarak zorla aç', nextChapterId: '15' }
+                { id: '1', text: 'Sembolleri çözerek kapıyı aç', nextChapterId: '14' },
+                { id: '2', text: 'Güç kullanarak zorla aç', nextChapterId: '15' }
             ]
         },
         '10': {
             id: '10',
             title: 'Tapınak Notları',
-            content: `Odadaki eski notları inceliyorsunuz. Notlarda kaybolmuş bir medeniyetin sırları yazıyor.`,
+            content: `Odadaki eski notları inceliyorsunuz. Notlarda ormanda kaybolmuş bir medeniyetin sırları yazıyor. Bu bilgiyi kullanmak büyük bir avantaj sağlayabilir.`,
             choices: [
-            { id: '1', text: 'Notları yanınıza al', nextChapterId: '9' },
-            { id: '2', text: 'Notları bırak ve dışarı çık', nextChapterId: '3' }
+                { id: '1', text: 'Notları yanınıza al', nextChapterId: '9' },
+                { id: '2', text: 'Notları bırak ve dışarı çık', nextChapterId: '1' }
             ]
         },
         '11': {
             id: '11',
-            title: 'Şehir Kalıntıları Keşfi',
-            content: `Kalıntılarda gizemli bir alan buluyorsunuz. Atmosfer gizemli ve biraz tehlikeli.`,
+            title: 'Şehir Kalıntıları',
+            content: `Kalıntıları gezerken eski bir tapınağın taş levhasını buluyorsunuz. Üzerinde bilinmeyen bir dil yazılı. Sesler geliyor, sanki sizi izliyorlar.`,
             choices: [
-            { id: '1', text: 'Derinlemesine keşfet', nextChapterId: '16' },
-            { id: '2', text: 'Güvenli alana dön', nextChapterId: '1' }
+                { id: '1', text: 'Levhayı incele', nextChapterId: '16' },
+                { id: '2', text: 'Hemen geri dön', nextChapterId: '1' }
             ]
         },
         '12': {
             id: '12',
             title: 'Karanlık Koridor',
-            content: `Koridor uzanıyor ve ayak sesleri duyuyorsunuz. Bir gölge hızla köşeden geçiyor.`,
+            content: `Koridor uzanıyor ve birden ayak sesleri duyuyorsunuz. Bir gölge hızla köşeden geçiyor. Ne yapacaksınız?`,
             choices: [
-            { id: '1', text: 'Gölgeyi takip et', nextChapterId: '17' },
-            { id: '2', text: 'Koridordan geri dön', nextChapterId: '4' }
+                { id: '1', text: 'Gölgeyi takip et', nextChapterId: '17' },
+                { id: '2', text: 'Koridordan geri dön', nextChapterId: '4' }
             ]
         },
         '13': {
             id: '13',
             title: 'Mağara Derinlikleri',
-            content: `Mağara karanlık ve nemli. İçeride eski bir hazinenin parıltısı görünüyor.`,
+            content: `Mağara karanlık ve nemli. İçeride eski bir hazinenin parıltısı görünüyor. Ancak tuzaklar olabilir.`,
             choices: [
-            { id: '1', text: 'Hazineye yaklaş', nextChapterId: '18' },
-            { id: '2', text: 'Geri çık', nextChapterId: '8' }
+                { id: '1', text: 'Hazineye yaklaş', nextChapterId: '18' },
+                { id: '2', text: 'Geri çık', nextChapterId: '8' }
             ]
         },
         '14': {
             id: '14',
             title: 'Taş Kapı',
-            content: `Sembolleri çözerek kapıyı açtınız. İçeride kayıp bir tapınak ve eski eserler var.`,
+            content: `Sembolleri çözerek kapıyı açtınız. İçeride kayıp bir tapınak ve eski eserler var. Tarihin derinlikleriyle yüzleşiyorsunuz.`,
             choices: [],
             isEnding: true
         },
         '15': {
             id: '15',
             title: 'Zorla Açılan Kapı',
-            content: `Kapıyı zorla açtınız, ancak içerideki tuzak tetiklendi. Macera burada sona eriyor.`,
+            content: `Kapıyı zorla açtınız, ancak içerideki tuzak tetiklendi. Bir patlama sesi geliyor ve macera burada sona eriyor.`,
             choices: [],
             isEnding: true
         },
         '16': {
             id: '16',
             title: 'Taş Levha Sırrı',
-            content: `Levhadaki dili çözüyorsunuz ve kaybolmuş bir medeniyetin hazinesine dair ipuçları buluyorsunuz.`,
+            content: `Levhadaki bilinmeyen dili çözüyorsunuz ve şehirde kaybolmuş bir medeniyetin hazinesine dair ipuçları buluyorsunuz.`,
             choices: [],
             isEnding: true
         },
@@ -864,13 +867,13 @@ export const sampleStories: Story[] = [
         '18': {
             id: '18',
             title: 'Hazine',
-            content: `Hazinenin içindesiniz. Altın ve değerli taşlar etrafı kaplıyor. Büyük bir seçim yapmanız gerekiyor.`,
+            content: `Hazinenin içindesiniz. Altın ve değerli taşlar etrafı kaplıyor. Ancak büyük bir seçim yapmanız gerekiyor: hazinenin tamamını almak mı yoksa sadece gerekli bir kısmını almak mı?`,
             choices: [],
             isEnding: true
         }
         }
-        },
-    
+    },
+  
   {
     id: '5',
     title: 'Uzay Kaşifi',
