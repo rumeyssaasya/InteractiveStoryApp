@@ -22,7 +22,6 @@ const storySlice = createSlice({
     },
     setCurrentStory(state, action: PayloadAction<string>) {
       state.currentStoryId = action.payload;
-      // Eğer daha önce progress yoksa başlat
       if (!state.userProgress[action.payload]) {
         state.userProgress[action.payload] = {
           storyId: action.payload,
@@ -55,4 +54,5 @@ export const {
   clearCurrentStory,
   resetUserProgress 
 } = storySlice.actions;
+
 export default storySlice.reducer;
