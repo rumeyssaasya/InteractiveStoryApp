@@ -1,4 +1,3 @@
-// contexts/ThemeContext.tsx
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { useColorScheme } from 'react-native';
@@ -26,10 +25,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [theme, setThemeState] = useState<ThemeMode>('auto');
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // Sistem teması değiştiğinde otomatik güncelle
   useEffect(() => {
     if (theme === 'auto') {
-      // Auto modda sistem temasını takip et
     }
   }, [systemColorScheme, theme]);
 
@@ -77,7 +74,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   );
 };
 
-// Default export to satisfy expo-router requirements
 const themeContext = {
   ThemeProvider,
   useTheme,
