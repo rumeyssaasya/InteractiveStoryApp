@@ -2,7 +2,6 @@ import { Link } from 'expo-router';
 import { FlatList, Image, Pressable, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { sampleStories } from '../data/stories';
-// Her sayfa bileşeninizin useEffect hook'una ekleyin
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { usePathname } from 'expo-router';
 import { useEffect } from 'react';
@@ -43,4 +42,5 @@ export default function StoriesScreen() {
       />
     </SafeAreaView>
   );
+
 }
