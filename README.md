@@ -68,7 +68,7 @@ var
 - StoryReader seçimleri:
 
 Her chapter’da seçim yaptıktan sonra bir sonraki chapter doğru mu yükleniyor?
-![WhatsApp Görsel 2025-08-31 saat 03 08 00_015f14aa](https://github.com/user-attachments/assets/8649e7ef-6fa9-451c-9f2a-726303636ae6)
+<img src="![WhatsApp Görsel 2025-08-31 saat 03 08 00_015f14aa](https://github.com/user-attachments/assets/8649e7ef-6fa9-451c-9f2a-726303636ae6) alt="Açıklama" width="300" height="200">
 
 Seçimler AsyncStorage’a kaydediliyor mu?
  ![WhatsApp Görsel 2025-08-31 saat 03 08 00_f2ae8c3e](https://github.com/user-attachments/assets/62b9211f-a33f-4e07-9644-2c78bdb51d40)
