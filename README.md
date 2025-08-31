@@ -68,25 +68,25 @@ var
 - StoryReader seçimleri:
 
 Her chapter’da seçim yaptıktan sonra bir sonraki chapter doğru mu yükleniyor?
-<img src="https://github.com/user-attachments/assets/8649e7ef-6fa9-451c-9f2a-726303636ae6" alt="Açıklama" width="200" height="400">
+- <img src="https://github.com/user-attachments/assets/8649e7ef-6fa9-451c-9f2a-726303636ae6" alt="Açıklama" width="200" height="400">
 
 
 Seçimler AsyncStorage’a kaydediliyor mu?
- <img src="https://github.com/user-attachments/assets/62b9211f-a33f-4e07-9644-2c78bdb51d40" alt="Açıklama" width="200" height="400">
+ - <img src="https://github.com/user-attachments/assets/62b9211f-a33f-4e07-9644-2c78bdb51d40" alt="Açıklama" width="200" height="400">
 
 Uygulama yeniden başlatınca son açılan sayfa (lastRoute) doğru yükleniyor mu?
  Evet
 
 Kullanıcı ilerlemesi korunuyor mu?
 Evet
- <img src="https://github.com/user-attachments/assets/5ea3cab9-36b4-40c4-b880-40323a2887c6" alt="Açıklama" width="200" height="400">
+ - <img src="https://github.com/user-attachments/assets/5ea3cab9-36b4-40c4-b880-40323a2887c6" alt="Açıklama" width="200" height="400">
 
 
 Tablar arasında geçiş yapılırken hata alınıyor mu?
  Hayır
- <img src="https://github.com/user-attachments/assets/ece88acf-734d-4193-ba5b-4108327f97a1" alt="Açıklama" width="200" height="400">
- <img src="https://github.com/user-attachments/assets/a1e20ff0-3deb-420c-bfd3-ed660655a654" alt="Açıklama" width="200" height="400">
- <img src="https://github.com/user-attachments/assets/a463269e-b193-4dcd-9fb1-c84cc53a381a" alt="Açıklama" width="200" height="400">
+ - <img src="https://github.com/user-attachments/assets/ece88acf-734d-4193-ba5b-4108327f97a1" alt="Açıklama" width="200" height="400">
+ - <img src="https://github.com/user-attachments/assets/a1e20ff0-3deb-420c-bfd3-ed660655a654" alt="Açıklama" width="200" height="400">
+ - <img src="https://github.com/user-attachments/assets/a463269e-b193-4dcd-9fb1-c84cc53a381a" alt="Açıklama" width="200" height="400">
 
 Proje Yapısı
 app/
