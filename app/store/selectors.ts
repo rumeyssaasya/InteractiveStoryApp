@@ -1,6 +1,5 @@
 import { RootState } from './index';
 
-// Story selectors
 export const selectStories = (state: RootState) => state.stories.stories;
 export const selectFilteredStories = (state: RootState) => state.stories.filteredStories;
 export const selectStoriesLoading = (state: RootState) => state.stories.isLoading;
@@ -13,12 +12,10 @@ export const selectUserProgress = (state: RootState) => state.story.userProgress
 export const selectUserProgressForStory = (storyId: string) => (state: RootState) => 
   state.story.userProgress[storyId];
 
-// User selectors
 export const selectUserStats = (state: RootState) => state.user.stats;
 export const selectUserLoading = (state: RootState) => state.user.isLoading;
 export const selectUserError = (state: RootState) => state.user.error;
 
-// Computed selectors
 export const selectStoriesByGenre = (genre: string) => (state: RootState) =>
   state.stories.stories.filter(story => story.genre === genre);
 
@@ -33,7 +30,6 @@ export const selectInProgressStories = (state: RootState) =>
 export const selectStoryById = (storyId: string) => (state: RootState) =>
   state.stories.stories.find(story => story.id === storyId);
 
-// Default export to satisfy expo-router requirements
 const selectors = {
   selectStories,
   selectFilteredStories,
@@ -54,3 +50,4 @@ const selectors = {
 };
 
 export default selectors;
+
